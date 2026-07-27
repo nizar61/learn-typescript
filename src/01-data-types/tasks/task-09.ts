@@ -14,3 +14,37 @@
  * 2. Store the participant data in a single collection.
  * 3. Display the participant data using console.log.
  */
+
+// Define Participant Type
+type Participant = {
+  studentId: string;
+  name: string;
+  age: number;
+  hasPaid: boolean;
+};
+
+// Participant Collection
+const participants: Participant[] = [
+  {
+    studentId: "ST001",
+    name: "Ahmad Fauzi",
+    age: 16,
+    hasPaid: true,
+  },
+  {
+    studentId: "ST002",
+    name: "Siti Nurhaliza",
+    age: 17,
+    hasPaid: false,
+  },
+  {
+    studentId: "ST003",
+    name: "Budi Santoso",
+    age: 16,
+    hasPaid: true,
+  },
+];
+
+// Display Participant Data
+console.log("Participant Data:");
+console.log(participants);

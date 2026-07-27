@@ -11,3 +11,58 @@
  * 
  * display the registration data using console.log.
  */
+
+// Define Registration Type
+type Registration = {
+  studentId: string;
+  fullName: string;
+  gradeLevel: number;
+  courseId: string;
+  courseTitle: string;
+  instructorName: string;
+  totalLearningHours: number;
+  registrationDate: string;
+  paymentCompleted: boolean;
+};
+
+// Registration Data
+const registration1: Registration = {
+  studentId: "ST2026001",
+  fullName: "Nadia Putri",
+  gradeLevel: 11,
+  courseId: "FS101",
+  courseTitle: "Full Stack Web Development",
+  instructorName: "Mr. Andi",
+  totalLearningHours: 40,
+  registrationDate: "2026-07-27",
+  paymentCompleted: true,
+};
+
+const registration2: Registration = {
+  studentId: "ST2026002",
+  fullName: "Ahmad Rizki",
+  gradeLevel: 10,
+  courseId: "JS201",
+  courseTitle: "JavaScript Programming",
+  instructorName: "Mrs. Sinta",
+  totalLearningHours: 30,
+  registrationDate: "2026-07-28",
+  paymentCompleted: false,
+};
+
+const registration3: Registration = {
+  studentId: "ST2026003",
+  fullName: "Siti Aisyah",
+  gradeLevel: 12,
+  courseId: "DB301",
+  courseTitle: "Database Fundamentals",
+  instructorName: "Mr. Budi",
+  totalLearningHours: 35,
+  registrationDate: "2026-07-29",
+  paymentCompleted: true,
+};
+
+// Display Registration Data
+console.log("Registration 1:", registration1);
+console.log("Registration 2:", registration2);
+console.log("Registration 3:", registration3);
