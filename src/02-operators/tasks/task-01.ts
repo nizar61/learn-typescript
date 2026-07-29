@@ -14,3 +14,31 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+type cafetaria = {
+MenuName: string;
+Price: number;
+Amount: number;
+};
+
+const purchasedItems: cafetaria[] = [
+    {
+        MenuName: "Fride rice",
+        Price: 18000,
+        Amount: 3,
+    },
+    {   MenuName: "Bottles of minerla water",
+        Price: 5000,
+        Amount: 2,
+    }
+];
+
+const TotalFood: number = purchasedItems[0].Amount * purchasedItems[0].Price
+const TotalDrink: number = purchasedItems[1].Amount * purchasedItems[1].Price
+const TotalPayment: number = TotalFood + TotalDrink - 10000
+
+console.log(purchasedItems)
+console.log("Total Price Food:",TotalFood)
+console.log("Total Price Drink:",TotalDrink)
+console.log("Total Payment:",TotalPayment)
+

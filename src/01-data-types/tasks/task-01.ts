@@ -35,3 +35,4 @@ console.log("Midterm Score:", midtermScore);
 console.log("Final Exam Score:", finalExamScore);
 console.log("Attendance Score:", attendanceScore);
 console.log("Participates in Extracurricular:", participatesInExtracurricular);
+
