@@ -33,3 +33,45 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+
+// Primitive Types
+const StudentName: string = "Alya Putri";
+const GPA: number = 3.89;
+const FamilyIncome: number = 4200000;
+const CompetitionCount: number = 4;
+const DisciplinaryRecord: boolean = false;
+const CompleteDocument: boolean = true;
+
+const ScholarshipBudget: number = 500000000;
+
+// Comparison Operators
+const GPARequirement = GPA >= 3.75;
+const IncomeRequirement = FamilyIncome < 5000000;
+const CompetitionRequirement = CompetitionCount >= 3;
+const DisciplineRequirement = DisciplinaryRecord === false;
+const DocumentRequirement = CompleteDocument === true;
+
+// Logical Operator
+const IsEligible =
+    GPARequirement &&
+    IncomeRequirement &&
+    CompetitionRequirement &&
+    DisciplineRequirement &&
+    DocumentRequirement;
+
+// Ternary Operator
+const ScholarshipAmount = IsEligible ? 12000000 : 0;
+
+// Arithmetic Operator
+const RemainingBudget = ScholarshipBudget - ScholarshipAmount;
+
+// Output
+console.log("Student Name :", StudentName);
+console.log("GPA Requirement :", GPARequirement);
+console.log("Income Requirement :", IncomeRequirement);
+console.log("Competition Requirement :", CompetitionRequirement);
+console.log("Discipline Requirement :", DisciplineRequirement);
+console.log("Document Requirement :", DocumentRequirement);
+console.log("Accepted :", IsEligible);
+console.log("Scholarship Amount :", ScholarshipAmount);
+console.log("Remaining Budget :", RemainingBudget);

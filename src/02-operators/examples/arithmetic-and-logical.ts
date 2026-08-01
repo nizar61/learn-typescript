@@ -19,7 +19,7 @@ console.log("a ** b =", a ** b);
 // Comparison operators
 console.log("\n=== Comparison ===");
 console.log("a > b:", a > b);
-console.log("a === b:", a === b);
+console.log("a === b:",  a === b);
 console.log("a !== b:", a !== b);
 
 // Logical operators
