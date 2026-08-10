@@ -13,8 +13,37 @@
  * - Average stock quantity
  */
 
-const stocks = [
-    25, 0, 18, 6, 42,
-    9, 0, 55, 13, 2,
-    30, 8, 41, 0, 16
+const stocks: number[] = [
+  25, 0, 18, 6, 42,
+  9, 0, 55, 13, 2,
+  30, 8, 41, 0, 16
 ];
+
+let totalInventory: number = 0;
+
+let outOfStock: number = 0;
+let lowStock: number = 0;
+let safeStock: number = 0;
+
+for (const stock of stocks) {
+  // Calculate total inventory
+  totalInventory += stock;
+
+  // Determine stock category
+  if (stock === 0) {
+    outOfStock++;
+  } else if (stock < 10) {
+    lowStock++;
+  } else {
+    safeStock++;
+  }
+}
+
+const averageStock: number = totalInventory / stocks.length;
+
+console.log("=== Warehouse Summary ===");
+console.log("Out of Stock Products:", outOfStock);
+console.log("Low Stock Products:", lowStock);
+console.log("Safe Stock Products:", safeStock);
+console.log("Total Inventory:", totalInventory);
+console.log("Average Stock Quantity:", averageStock);

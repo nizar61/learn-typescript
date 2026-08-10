@@ -18,9 +18,41 @@
  * - Average competition score
  */
 
-const scores = [
-    98, 76, 85, 62, 91,
-    73, 88, 59, 100, 81,
-    67, 79, 94, 83, 71,
-    96, 65, 87, 74, 90
+const scores: number[] = [
+  98, 87, 76, 65, 92,
+  95, 84, 73, 89, 100,
+  81, 70, 96, 85, 78,
+  67, 90, 74, 83, 88
 ];
+
+let totalScore: number = 0;
+
+let goldMedal: number = 0;
+let silverMedal: number = 0;
+let bronzeMedal: number = 0;
+let noMedal: number = 0;
+
+for (const score of scores) {
+  // Calculate total score
+  totalScore += score;
+
+  // Determine medal category
+  if (score >= 95) {
+    goldMedal++;
+  } else if (score >= 85) {
+    silverMedal++;
+  } else if (score >= 75) {
+    bronzeMedal++;
+  } else {
+    noMedal++;
+  }
+}
+
+const averageScore: number = totalScore / scores.length;
+
+console.log("=== Competition Summary ===");
+console.log("Gold Medal Winners:", goldMedal);
+console.log("Silver Medal Winners:", silverMedal);
+console.log("Bronze Medal Winners:", bronzeMedal);
+console.log("No Medal:", noMedal);
+console.log("Average Score:", averageScore);

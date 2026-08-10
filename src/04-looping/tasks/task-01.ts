@@ -15,3 +15,13 @@
  * 3. After the loop finishes, display: "Attendance verification completed"
 
  */
+
+console.log("=== Student Attendance Verification ===");
+
+// Loop for 30 students
+for (let i = 1; i <= 30; i++) {
+  console.log(`Checking attendance for Student #${i}`);
+}
+
+// Display after the loop finishes
+console.log("Attendance verification completed.");
